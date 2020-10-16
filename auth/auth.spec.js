@@ -12,7 +12,7 @@ describe('server', () => {
 
         it('should return 201', () => {
             return request(server).post('/api/auth/register')
-            .send({username: 'ajg', password: 'pass'})
+            .send({username: 'ajg ', password: 'pass'})
             .then(res => {
                 expect(res.status).toBe(201)
             })
